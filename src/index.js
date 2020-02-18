@@ -8,6 +8,10 @@ import { BrowserRouter } from 'react-router-dom';
 import App from 'src/components/App';
 import store from 'src/store';
 
+import { loadRecipes } from 'src/actions/recipes';
+// Charge les data depuis l'api
+store.dispatch(loadRecipes());
+
 // == Render
 // 1. Élément React racine (celui qui contient l'ensemble de l'app)
 //    => crée une structure d'objets imbriqués (DOM virtuel)
