@@ -3,12 +3,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // == Import
+import TopBarStyled from './TopBarStyled';
 
 // == Composant
 const TopBar = () => (
-  <div>
-    TopBar
-  </div>
+  <TopBarStyled>
+    <h1 className="top-title">oRecipes</h1>
+  </TopBarStyled>
 );
 
 TopBar.propTypes = {};
