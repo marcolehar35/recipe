@@ -7,6 +7,7 @@ import './styles.css';
 import Nav from 'src/components/Nav';
 import TopBar from 'src/components/TopBar';
 import Home from 'src/components/Home';
+import Recipe from 'src/components/Recipe';
 import NotFound from 'src/components/NotFound';
 
 // == Composant
@@ -18,6 +19,11 @@ const App = () => (
       <Switch>
         {/* on peut passer la prop component avec le composant si on a pas de data à transmettre */}
         <Route exact path="/" component={Home} />
+
+        {/* Route pour une page de recette */}
+        <Route exact path="/recipe/:slug">
+          {/* <Recipe /> */}
+        </Route>
 
         {/* Cas "404" */}
         <Route>
