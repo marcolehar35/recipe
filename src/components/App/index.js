@@ -22,6 +22,7 @@ const App = () => (
 
         {/* Route pour une page de recette */}
         <Route exact path="/recipe/:slug">
+          <div>Page de la recette</div>
           {/* <Recipe /> */}
         </Route>
 
