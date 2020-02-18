@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+}
+
+.app .main-content {
+  height: 100vh;
+  overflow: auto;
+  width: 100%;
+}
