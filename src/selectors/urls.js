@@ -12,3 +12,8 @@ export const getSlugFromString = (string) => {
 export const getUrl = (prefix, string) => {
   return `/${prefix}/${getSlugFromString(string)}`;
 };
+
+export const getRecipeFromSlug = (list, slug) => {
+  // je veux la recette dont le titre transformé en slug est le même que le slug fournit
+  return list.find((recipe) => getSlugFromString(recipe.title) === slug);
+};

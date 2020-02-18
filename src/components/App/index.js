@@ -21,9 +21,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
 
         {/* Route pour une page de recette */}
-        <Route exact path="/recipe/:slug">
-          <Recipe />
-        </Route>
+        <Route exact path="/recipe/:slug" component={Recipe} />
 
         {/* Cas "404" */}
         <Route>
