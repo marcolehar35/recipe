@@ -4,19 +4,16 @@ import { Route, Switch } from 'react-router-dom';
 
 // == Import
 import './styles.css';
-import Nav from 'src/components/Nav';
+import Nav from 'src/containers/Nav';
 import TopBar from 'src/components/TopBar';
 import Home from 'src/components/Home';
 import Recipe from 'src/components/Recipe';
 import NotFound from 'src/components/NotFound';
 
-// data ici : temporaire
-import recipes from 'src/data';
-
 // == Composant
 const App = () => (
   <div className="app">
-    <Nav list={recipes} />
+    <Nav />
     <main className="main-content">
       <TopBar />
       <Switch>
