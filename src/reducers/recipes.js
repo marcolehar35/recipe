@@ -4,6 +4,7 @@
 import recipesData from 'src/data';
 
 // Initial State
+// state.recipes....
 const initialState = {
   loading: false,
   list: recipesData,

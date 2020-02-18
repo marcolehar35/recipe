@@ -7,7 +7,7 @@ import './styles.css';
 import Nav from 'src/containers/Nav';
 import TopBar from 'src/components/TopBar';
 import Home from 'src/components/Home';
-import Recipe from 'src/components/Recipe';
+import Recipe from 'src/containers/Recipe';
 import NotFound from 'src/components/NotFound';
 
 // == Composant
@@ -22,8 +22,7 @@ const App = () => (
 
         {/* Route pour une page de recette */}
         <Route exact path="/recipe/:slug">
-          <div>Page de la recette</div>
-          {/* <Recipe /> */}
+          <Recipe />
         </Route>
 
         {/* Cas "404" */}
