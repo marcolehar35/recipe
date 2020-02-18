@@ -13,7 +13,6 @@ const App = () => (
     <Nav />
     <main className="main-content">
       <TopBar />
-
       <Home />
     </main>
   </div>
