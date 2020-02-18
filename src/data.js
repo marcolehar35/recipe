@@ -1,7 +1,7 @@
 export default [
   {
     id: 12345,
-    title: 'Crêpes raffinées',
+    title: 'Crêpes : raffinées :) !',
     thumbnail: 'https://images.pexels.com/photos/53483/strawberries-crepe-dessert-sweet-53483.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     author: 'John Deuf',
     difficulty: 'Facile',

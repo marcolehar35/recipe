@@ -10,10 +10,13 @@ import Home from 'src/components/Home';
 import Recipe from 'src/components/Recipe';
 import NotFound from 'src/components/NotFound';
 
+// data ici : temporaire
+import recipes from 'src/data';
+
 // == Composant
 const App = () => (
   <div className="app">
-    <Nav />
+    <Nav list={recipes} />
     <main className="main-content">
       <TopBar />
       <Switch>
