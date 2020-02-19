@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // == Import
-import RecipeCard from 'src/components/RecipeCard';
+import RecipeCard from 'src/containers/RecipeCard';
 import HomeStyled from './HomeStyled';
 
 // == Composant
