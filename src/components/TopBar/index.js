@@ -1,6 +1,5 @@
 // == Import npm
 import React from 'react';
-import PropTypes from 'prop-types';
 
 // == Import
 import LoginForm from 'src/containers/LoginForm';
@@ -13,8 +12,6 @@ const TopBar = () => (
     <LoginForm />
   </TopBarStyled>
 );
-
-TopBar.propTypes = {};
 
 // == Export
 export default TopBar;

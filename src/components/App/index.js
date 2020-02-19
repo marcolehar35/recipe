@@ -7,7 +7,7 @@ import { Route, Switch } from 'react-router-dom';
 import './styles.css';
 import Nav from 'src/containers/Nav';
 import TopBar from 'src/components/TopBar';
-import Home from 'src/components/Home';
+import Home from 'src/containers/Home';
 import Recipe from 'src/containers/Recipe';
 import NotFound from 'src/components/NotFound';
 

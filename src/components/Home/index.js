@@ -7,18 +7,24 @@ import RecipeCard from 'src/components/RecipeCard';
 import HomeStyled from './HomeStyled';
 
 // == Composant
-const Home = () => (
+const Home = ({ recipes }) => (
   <HomeStyled>
-    <p className="intro">Venez vous régalez avec ces merveilles recettes !</p>
+    <p className="intro">
+      Venez essayer nos {recipes.length} dernières recettes
+    </p>
     <div className="cards">
-      <RecipeCard />
-      <RecipeCard />
-      <RecipeCard />
+      {recipes.map((recipe) => (
+        <RecipeCard key={recipe.id} {...recipe} />
+      ))}
     </div>
   </HomeStyled>
 );
 
-Home.propTypes = {};
+Home.propTypes = {
+  recipes: PropTypes.arrayOf(
+    PropTypes.object.isRequired,
+  ).isRequired,
+};
 
 // == Export
 export default Home;
