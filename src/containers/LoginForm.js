@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 
 import LoginForm from 'src/components/LoginForm';
 
-import { changeField } from 'src/actions/auth';
+import { login, logout, changeField } from 'src/actions/auth';
 
 // == Data / state
 const mapStateToProps = (state) => ({
@@ -17,10 +17,10 @@ const mapDispatchToProps = (dispatch) => ({
     dispatch(changeField(value, name));
   },
   handleLogin: () => {
-    console.log('handleLogin : container');
+    dispatch(login());
   },
   handleLogout: () => {
-    console.log('handleLogout : container');
+    dispatch(logout());
   },
 });
 

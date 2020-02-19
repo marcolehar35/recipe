@@ -1,4 +1,4 @@
-// Imports
+/* eslint-disable no-console */
 import axios from 'axios';
 
 import { LOAD_RECIPES, saveRecipes } from 'src/actions/recipes';

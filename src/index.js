@@ -9,8 +9,13 @@ import App from 'src/containers/App';
 import store from 'src/store';
 
 import { loadRecipes } from 'src/actions/recipes';
+import { checkLogged } from 'src/actions/auth';
+
 // Charge les data depuis l'api
 store.dispatch(loadRecipes());
+// Je vérifie si l'utilisateur est loggé
+store.dispatch(checkLogged());
+
 
 // == Render
 // 1. Élément React racine (celui qui contient l'ensemble de l'app)

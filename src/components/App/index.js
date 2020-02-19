@@ -20,7 +20,8 @@ const App = ({ loading }) => (
       {loading && <div>Chargement, veuillez patienter...</div>}
       {!loading && (
         <Switch>
-          {/* on peut passer la prop component avec le composant si on a pas de data à transmettre */}
+          {/* on peut passer la prop component avec le composant
+          si on a pas de data à transmettre */}
           <Route exact path="/" component={Home} />
 
           {/* Route pour une page de recette */}

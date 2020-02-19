@@ -1,4 +1,4 @@
-import { CHANGE_FIELD } from 'src/actions/auth';
+import { CHANGE_FIELD, SET_USER } from 'src/actions/auth';
 
 // Action Types
 
@@ -8,6 +8,7 @@ const initialState = {
   email: '',
   password: '',
   isLogged: false,
+  user: {},
 };
 
 // Reducer
@@ -17,6 +18,12 @@ const authReducer = (state = initialState, action = {}) => {
       return {
         ...state,
         [action.name]: action.value,
+      };
+    case SET_USER:
+      return {
+        ...state,
+        user: action.user,
+        isLogged: action.logged,
       };
     default:
       return state;
