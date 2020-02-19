@@ -17,7 +17,11 @@ const App = ({ loading }) => (
     <Nav />
     <main className="main-content">
       <TopBar />
-      {loading && <div>Chargement, veuillez patienter...</div>}
+      {loading && (
+        <div className="loading">
+          Chargement, veuillez patienter...
+        </div>
+      )}
       {!loading && (
         <Switch>
           {/* on peut passer la prop component avec le composant
