@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Field from './Field';
-// import { useField } from './hooks';
 
 import './styles.css';
 
