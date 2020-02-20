@@ -8,7 +8,9 @@ const initialState = {
   email: '',
   password: '',
   isLogged: false,
-  user: {},
+  user: {
+    favorites: [],
+  },
 };
 
 // Reducer

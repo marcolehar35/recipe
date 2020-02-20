@@ -13,7 +13,9 @@ describe('reducer for auth', () => {
       email: '',
       password: '',
       isLogged: false,
-      user: {},
+      user: {
+        favorites: [],
+      },
     });
   });
 });
